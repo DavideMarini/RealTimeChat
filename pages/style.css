@@ -1,0 +1,63 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
+
+* {
+    font-family: "Roboto Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
+
+:root {
+    --bs-primary: hsl(210, 11%, 80%);
+    --bs-primary-hover: hsl(210, 11%, 60%);
+    --bs-primary-active: hsl(210, 11%, 50%);
+    --bs-primary-text: hsl(210, 11%, 15%);
+    --bs-primary-text-active: hsl(0, 0%, 95%);
+}
+
+.btn-primary-custom {
+    background-color: var(--bs-primary) !important;
+    border-color: var(--bs-primary) !important;
+    color: var(--bs-primary-text) !important;
+    box-shadow: none !important;
+    outline: none !important;
+    transition: background-color 0.15s ease, color 0.15s ease;
+}
+
+.btn-primary-custom:hover,
+.btn-primary-custom:focus {
+    background-color: var(--bs-primary-hover) !important;
+    border-color: var(--bs-primary-hover) !important;
+    color: var(--bs-primary-text-active) !important;
+}
+
+.btn-primary-custom:active,
+.btn-primary-custom.active {
+    background-color: var(--bs-primary-active) !important;
+    border-color: var(--bs-primary-active) !important;
+    color: var(--bs-primary-text-active) !important;
+    box-shadow: none !important;
+    outline: none !important;
+}
+
+body {
+    width: 100%;
+    height: 100dvh;
+}
+
+header {
+    width: 100%;
+    height: 15%;
+    outline: 1px solid black;
+}
+
+main {
+    width: 100%;
+    height: 70%;
+}
+
+footer {
+    width: 100%;
+    height: 15%;
+    outline: 1px solid black;
+}
